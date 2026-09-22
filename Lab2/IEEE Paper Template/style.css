@@ -1,0 +1,294 @@
+/* =========================================
+   PAGE SETTINGS
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    background: #e5e5e5;
+
+    font-family:
+        "Times New Roman",
+        Times,
+        serif;
+
+    color: #000;
+
+    line-height: 1.35;
+
+}
+
+
+/* =========================================
+   PAPER
+========================================= */
+
+.paper {
+
+    width: 210mm;
+
+    min-height: 297mm;
+
+    margin: 30px auto;
+
+    padding: 18mm 17mm;
+
+    background: white;
+
+    box-shadow:
+        0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.paper > h1 {
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    line-height: 1.25;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   AUTHORS
+========================================= */
+
+.authors {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    text-align: center;
+
+    gap: 35px;
+
+    font-size: 10px;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+section {
+
+    margin-bottom: 15px;
+
+}
+
+
+section h2 {
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+}
+
+
+section p {
+
+    text-align: justify;
+
+    font-size: 10px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* =========================================
+   ABSTRACT
+========================================= */
+
+.paper > section:first-of-type h2 {
+
+    text-align: center;
+
+}
+
+
+.paper > section:first-of-type p {
+
+    font-size: 10px;
+
+    text-align: justify;
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+}
+
+
+/* =========================================
+   KEYWORDS
+========================================= */
+
+.keywords {
+
+    font-size: 10px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================
+   TWO COLUMN PAPER
+========================================= */
+
+.columns {
+
+    column-count: 2;
+
+    column-gap: 18px;
+
+    column-rule: none;
+
+}
+
+
+/*
+   Prevent sections from breaking
+   awkwardly between columns.
+*/
+
+.columns section {
+
+    break-inside: avoid;
+
+}
+
+
+/* =========================================
+   REFERENCES
+========================================= */
+
+.reference {
+
+    text-align: left;
+
+    padding-left: 5px;
+
+    text-indent: -5px;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.paper-footer {
+
+    margin-top: 25px;
+
+    padding-top: 8px;
+
+    border-top: 1px solid #999;
+
+    text-align: center;
+
+    font-size: 8px;
+
+    color: #555;
+
+}
+
+
+/* =========================================
+   PRINT SETTINGS
+========================================= */
+
+@media print {
+
+    body {
+
+        background: white;
+
+    }
+
+
+    .paper {
+
+        margin: 0;
+
+        width: 210mm;
+
+        min-height: 297mm;
+
+        box-shadow: none;
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE VIEW
+========================================= */
+
+@media screen and (max-width: 800px) {
+
+    .paper {
+
+        width: 95%;
+
+        padding: 30px;
+
+        margin: 15px auto;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .authors {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .columns {
+
+        column-count: 1;
+
+    }
+
+
+    .paper > h1 {
+
+        font-size: 16px;
+
+    }
+
+}

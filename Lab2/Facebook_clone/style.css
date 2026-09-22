@@ -1,0 +1,1045 @@
+/* =========================================
+   BASIC SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f0f2f5;
+
+    color: #1c1e21;
+
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    height: 65px;
+
+    background: white;
+
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+}
+
+
+/* Facebook Logo */
+
+.facebook-logo {
+
+    color: #1877f2;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+}
+
+
+/* Search */
+
+.search-box {
+
+    background: #f0f2f5;
+
+    border-radius: 25px;
+
+    padding: 10px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 300px;
+
+}
+
+.search-box span {
+
+    margin-right: 8px;
+
+}
+
+.search-box input {
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    width: 100%;
+
+    font-size: 14px;
+
+}
+
+
+/* Navbar Icons */
+
+.nav-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.nav-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    background: #e4e6eb;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.profile-mini {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #1877f2;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.facebook-container {
+
+    max-width: 1450px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        260px
+        minmax(500px, 700px)
+        280px;
+
+    gap: 25px;
+
+    padding: 25px;
+
+}
+
+
+/* =========================================
+   LEFT SIDEBAR
+========================================= */
+
+.left-sidebar {
+
+    position: sticky;
+
+    top: 90px;
+
+    height: fit-content;
+
+}
+
+
+.profile-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.left-sidebar > a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 12px;
+
+    color: #1c1e21;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+.left-sidebar > a:hover {
+
+    background: #e4e6eb;
+
+}
+
+
+.left-sidebar hr {
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 15px 0;
+
+}
+
+
+.shortcut-title {
+
+    color: #65676b;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    padding: 10px;
+
+}
+
+
+/* =========================================
+   PROFILE PICTURE
+========================================= */
+
+.profile-picture {
+
+    width: 45px;
+
+    height: 45px;
+
+    min-width: 45px;
+
+    border-radius: 50%;
+
+    background: #1877f2;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+
+}
+
+.profile-picture.small {
+
+    width: 38px;
+
+    height: 38px;
+
+    min-width: 38px;
+
+}
+
+
+/* =========================================
+   STORIES
+========================================= */
+
+.stories {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    overflow-x: auto;
+
+}
+
+
+.story {
+
+    width: 125px;
+
+    height: 200px;
+
+    min-width: 125px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+}
+
+
+.story-image {
+
+    height: 160px;
+
+    position: relative;
+
+}
+
+
+.profile-background {
+
+    background: linear-gradient(
+        135deg,
+        #1877f2,
+        #8ab4f8
+    );
+
+}
+
+
+.story-one {
+
+    background: linear-gradient(
+        135deg,
+        #ff7a18,
+        #af002d
+    );
+
+}
+
+
+.story-two {
+
+    background: linear-gradient(
+        135deg,
+        #7f00ff,
+        #e100ff
+    );
+
+}
+
+
+.story-three {
+
+    background: linear-gradient(
+        135deg,
+        #11998e,
+        #38ef7d
+    );
+
+}
+
+
+.story-four {
+
+    background: linear-gradient(
+        135deg,
+        #f7971e,
+        #ffd200
+    );
+
+}
+
+
+.story-profile {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #1877f2;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 30px;
+
+}
+
+
+.story-avatar {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #1877f2;
+
+    color: white;
+
+    border: 3px solid white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    position: absolute;
+
+    top: 10px;
+
+    left: 10px;
+
+}
+
+
+.story p {
+
+    padding: 10px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.create-button {
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #1877f2;
+
+    color: white;
+
+    border: 4px solid white;
+
+    position: absolute;
+
+    bottom: 23px;
+
+    left: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+
+}
+
+
+/* =========================================
+   CREATE POST
+========================================= */
+
+.post-box {
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 1px 3px rgba(0,0,0,0.1);
+
+}
+
+
+.post-top {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.post-top input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: #f0f2f5;
+
+    border-radius: 25px;
+
+    padding: 13px 18px;
+
+    font-size: 15px;
+
+}
+
+
+.post-box hr {
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 15px 0;
+
+}
+
+
+.post-options {
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+
+.post-options button {
+
+    background: transparent;
+
+    border: none;
+
+    padding: 10px;
+
+    font-weight: bold;
+
+    color: #65676b;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   POST
+========================================= */
+
+.post {
+
+    background: white;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 1px 3px rgba(0,0,0,0.1);
+
+}
+
+
+.post-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.post-header h3 {
+
+    font-size: 15px;
+
+}
+
+
+.post-header p {
+
+    font-size: 12px;
+
+    color: #65676b;
+
+}
+
+
+.more {
+
+    margin-left: auto;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+.post-content {
+
+    padding: 20px 0;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   POST IMAGE
+========================================= */
+
+.coding-image {
+
+    height: 300px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #2563eb
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.coding-image div {
+
+    font-size: 90px;
+
+    font-weight: bold;
+
+    color: white;
+
+}
+
+
+/* =========================================
+   QUOTE CARD
+========================================= */
+
+.quote-card {
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background: #eef4ff;
+
+}
+
+
+.quote-card h2 {
+
+    font-size: 30px;
+
+    color: #1877f2;
+
+    margin-bottom: 10px;
+
+}
+
+
+.quote-card p {
+
+    color: #65676b;
+
+}
+
+
+/* =========================================
+   POST STATS
+========================================= */
+
+.post-stats {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 12px 0;
+
+    color: #65676b;
+
+    font-size: 13px;
+
+}
+
+
+.post hr {
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+}
+
+
+/* =========================================
+   POST ACTIONS
+========================================= */
+
+.post-actions {
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+
+.post-actions button {
+
+    flex: 1;
+
+    padding: 10px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #65676b;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+
+.post-actions button:hover {
+
+    background: #f0f2f5;
+
+}
+
+
+/* =========================================
+   RIGHT SIDEBAR
+========================================= */
+
+.right-sidebar {
+
+    position: sticky;
+
+    top: 90px;
+
+    height: fit-content;
+
+}
+
+
+.birthday {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 1px 3px rgba(0,0,0,0.1);
+
+}
+
+
+.birthday h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.birthday p {
+
+    color: #65676b;
+
+    font-size: 14px;
+
+}
+
+
+.right-sidebar hr {
+
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 20px 0;
+
+}
+
+
+.contacts-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contacts-header h3 {
+
+    color: #65676b;
+
+}
+
+
+.contact {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+}
+
+
+.contact:hover {
+
+    background: #e4e6eb;
+
+}
+
+
+.online-picture {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #1877f2;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+}
+
+
+.contact span {
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .facebook-container {
+
+        grid-template-columns:
+            220px
+            1fr;
+
+    }
+
+    .right-sidebar {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .navbar {
+
+        padding: 0 10px;
+
+    }
+
+    .facebook-logo {
+
+        font-size: 25px;
+
+    }
+
+    .search-box {
+
+        width: 180px;
+
+    }
+
+    .nav-icons {
+
+        gap: 5px;
+
+    }
+
+    .facebook-container {
+
+        grid-template-columns: 1fr;
+
+        padding: 10px;
+
+    }
+
+    .left-sidebar {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .search-box {
+
+        display: none;
+
+    }
+
+    .nav-icon {
+
+        width: 35px;
+
+        height: 35px;
+
+    }
+
+    .stories {
+
+        gap: 5px;
+
+    }
+
+    .story {
+
+        width: 100px;
+
+        min-width: 100px;
+
+        height: 170px;
+
+    }
+
+    .story-image {
+
+        height: 135px;
+
+    }
+
+    .post-options button {
+
+        font-size: 11px;
+
+    }
+
+}
