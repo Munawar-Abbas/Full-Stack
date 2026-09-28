@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook - Home Page</title>
+
+<!-- Bootstrap CSS (style.css se PEHLE) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar sticky-top bg-white border-bottom px-3 px-md-4">
+  <div class="container-fluid d-flex align-items-center justify-content-between p-0">
+    <div class="facebook-logo">facebook</div>
+
+    <div class="search-box d-none d-sm-flex align-items-center">
+      <span class="me-2">🔍</span>
+      <input type="text" placeholder="Search Facebook">
+    </div>
+
+    <div class="nav-icons d-flex align-items-center gap-2 gap-md-3">
+      <div class="nav-icon">⌂</div>
+      <div class="nav-icon">👥</div>
+      <div class="nav-icon">🔔</div>
+      <div class="profile-mini">MA</div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MAIN ============ -->
+<main class="container-fluid facebook-container py-3">
+  <div class="row g-4 justify-content-center">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block">
+      <div class="left-sidebar sticky-top">
+        <div class="profile-menu d-flex align-items-center gap-3 p-2 mb-2">
+          <div class="profile-picture small">MA</div>
+          <strong>Munawar Abbas</strong>
+        </div>
+
+        <a href="#" class="side-link">🏠 <span>Home</span></a>
+        <a href="#" class="side-link">👤 <span>Friends</span></a>
+        <a href="#" class="side-link">👥 <span>Groups</span></a>
+        <a href="#" class="side-link">🕘 <span>Memories</span></a>
+        <a href="#" class="side-link">💾 <span>Saved</span></a>
+        <a href="#" class="side-link">📺 <span>Video</span></a>
+        <a href="#" class="side-link">🛒 <span>Marketplace</span></a>
+        <a href="#" class="side-link">☰ <span>See more</span></a>
+
+        <hr>
+
+        <p class="shortcut-title">Your shortcuts</p>
+        <a href="#" class="side-link">💻 <span>Programming Students</span></a>
+        <a href="#" class="side-link">📚 <span>BSCS Community</span></a>
+        <a href="#" class="side-link">🎓 <span>Air University</span></a>
+      </div>
+    </aside>
+
+    <!-- CENTER FEED -->
+    <section class="col-12 col-md-8 col-lg-6 feed">
+
+      <!-- Stories -->
+      <div class="stories d-flex gap-2 mb-3 overflow-auto">
+        <div class="story create-story">
+          <div class="story-image profile-background">
+            <div class="story-profile">MA</div>
+          </div>
+          <div class="create-button">+</div>
+          <p>Create story</p>
+        </div>
+
+        <div class="story">
+          <div class="story-image story-one"><div class="story-avatar">A</div></div>
+          <p>Ahmed</p>
+        </div>
+        <div class="story">
+          <div class="story-image story-two"><div class="story-avatar">S</div></div>
+          <p>Sara</p>
+        </div>
+        <div class="story">
+          <div class="story-image story-three"><div class="story-avatar">H</div></div>
+          <p>Hamza</p>
+        </div>
+        <div class="story">
+          <div class="story-image story-four"><div class="story-avatar">F</div></div>
+          <p>Fatima</p>
+        </div>
+      </div>
+
+      <!-- Create post -->
+      <div class="card-box post-box mb-3">
+        <div class="d-flex align-items-center gap-2">
+          <div class="profile-picture">MA</div>
+          <input type="text" class="post-input flex-fill" placeholder="What's on your mind, Munawar?">
+        </div>
+        <hr>
+        <div class="d-flex justify-content-around">
+          <button class="btn fb-btn">🔴 Live Video</button>
+          <button class="btn fb-btn">🖼️ Photo/Video</button>
+          <button class="btn fb-btn">😊 Feeling/Activity</button>
+        </div>
+      </div>
+
+      <!-- Post 1 -->
+      <article class="card-box post mb-3">
+        <div class="d-flex align-items-center gap-2">
+          <div class="profile-picture">MA</div>
+          <div>
+            <h3>Munawar Abbas</h3>
+            <p>2h · 🌎</p>
+          </div>
+          <button class="more ms-auto">⋯</button>
+        </div>
+
+        <div class="post-content">
+          <p>Learning HTML and CSS today. Building my first Facebook-style homepage
+          for my Full Stack Web Development lab. 💻</p>
+        </div>
+
+        <div class="coding-image d-flex justify-content-center align-items-center">
+          <div>&lt;/&gt;</div>
+        </div>
+
+        <div class="post-stats d-flex justify-content-between">
+          <span>👍 ❤️ 24</span>
+          <span>5 comments · 2 shares</span>
+        </div>
+        <hr>
+        <div class="d-flex">
+          <button class="btn fb-btn flex-fill">👍 Like</button>
+          <button class="btn fb-btn flex-fill">💬 Comment</button>
+          <button class="btn fb-btn flex-fill">↗ Share</button>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="card-box post mb-3">
+        <div class="d-flex align-items-center gap-2">
+          <div class="profile-picture">S</div>
+          <div>
+            <h3>Sara Khan</h3>
+            <p>4h · 🌎</p>
+          </div>
+          <button class="more ms-auto">⋯</button>
+        </div>
+
+        <div class="post-content">
+          <p>University life is all about learning new things and making good memories. 🎓📚</p>
+        </div>
+
+        <div class="quote-card text-center">
+          <h2>Keep Learning.</h2>
+          <p>Small progress every day becomes something big.</p>
+        </div>
+
+        <div class="post-stats d-flex justify-content-between">
+          <span>👍 ❤️ 48</span>
+          <span>8 comments · 3 shares</span>
+        </div>
+        <hr>
+        <div class="d-flex">
+          <button class="btn fb-btn flex-fill">👍 Like</button>
+          <button class="btn fb-btn flex-fill">💬 Comment</button>
+          <button class="btn fb-btn flex-fill">↗ Share</button>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="col-lg-3 col-xl-3 d-none d-lg-block">
+      <div class="right-sidebar sticky-top">
+
+        <div class="card-box birthday">
+          <h3>🎂 Birthdays</h3>
+          <p><strong>Ahmed</strong> and <strong>2 others</strong> have birthdays today.</p>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="contacts-title">Contacts</h3>
+          <div>🔍 · ⋯</div>
+        </div>
+
+        <div class="contact d-flex align-items-center gap-3"><div class="online-picture">A</div><span>Ahmed Ali</span></div>
+        <div class="contact d-flex align-items-center gap-3"><div class="online-picture">S</div><span>Sara Khan</span></div>
+        <div class="contact d-flex align-items-center gap-3"><div class="online-picture">H</div><span>Hamza Ahmed</span></div>
+        <div class="contact d-flex align-items-center gap-3"><div class="online-picture">F</div><span>Fatima Noor</span></div>
+        <div class="contact d-flex align-items-center gap-3"><div class="online-picture">Z</div><span>Zain Abbas</span></div>
+
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
