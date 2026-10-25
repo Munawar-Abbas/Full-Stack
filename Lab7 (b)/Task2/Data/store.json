@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Everyday Backpack",
+      "price": 29.99,
+      "emoji": "🎒",
+      "image": "",
+      "description": "A useful backpack for everyday needs."
+    },
+    {
+      "id": 2,
+      "name": "Wireless Headphones",
+      "price": 39.5,
+      "emoji": "🎧",
+      "image": "",
+      "description": "Comfortable headphones for study."
+    },
+    {
+      "id": 3,
+      "name": "Coffee Mug",
+      "price": 8.99,
+      "emoji": "☕",
+      "image": "",
+      "description": "A mug for your favourite drink."
+    }
+  ],
+  "users": [],
+  "reviews": [],
+  "carts": [],
+  "orders": []
+}

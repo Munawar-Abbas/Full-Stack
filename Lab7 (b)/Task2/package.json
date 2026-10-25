@@ -1,0 +1,9 @@
+{
+  "name": "bazaar-lane",
+  "version": "1.0.0",
+  "description": "Full Stack Lab Task 2",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
